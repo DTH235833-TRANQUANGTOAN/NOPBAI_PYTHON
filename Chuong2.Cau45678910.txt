@@ -1,0 +1,125 @@
+Câu 4: Python hỗ trợ những kiểu dữ liệu cơ bản như số nguyên (int), số thực (float),
+    kiểu logic (boolean) và chuỗi ký tự (string)
+Câu 5: Ghi chú trong python có 2 loại
+     ghi chú 1 dòng bắt đầu bằng kí tự # ở trước nội dung cần chú thích, sau đó những gì nhập phía sau sẽ được trình thông dịch bỏ qua
+    Ví dụ: # đây là chú thích
+     ghi chú nhiều dòng thì ta sử dụng ba cặp dấu nháy đôi hoặc 3 cặp nháy đơn
+     Ví dụ: """    
+                đây là 
+                chú thích   
+            """
+            '''
+                đây là 
+                chú thích
+            '''
+Câu 6: Ý nghĩa của các toán tử
+        /:   là chia lấy phần nguyên hai toán hạng
+        //:  là chia lấy phần nguyên và loại bỏ phần thập phân của 2 toán hạng
+        %:   là chia lấy phần dư của hai toán hạng
+        **:  là toán tử lũy thừa
+        and: gọi toán tử logic AND, nếu cả 2 toán tử đều có giá trị khác 0 thì điều kiện trở nên true
+        or:  gọi là toán tử logic OR, nếu 1 trong 2 toán tử có giá trị khác 0 thì điều kiện là true
+        not: gọi là toán tử NOT, dùng để đảo ngược lại trạng thái của toán hạng đó, nếu điều kiện toán hạng là true thì phủ định của nó là false
+Câu 7:  Để nhập dữ liệu từ bàn phím trong Python, bạn sử dụng hàm input(),
+    hàm này luôn trả về một chuỗi. Để nhận các kiểu dữ liệu khác như số nguyên (int)
+    hoặc số thực (float), bạn cần kết hợp hàm input() với các hàm ép kiểu tương ứng, ví dụ: int(input()) hoặc float(input()). 
+        Ví dụ:  tuoi = int(input("Nhập tuổi của bạn: "))
+                print("Tuổi của bạn là:", tuoi)
+Câu 8: có 3 loại lỗi khi lập trình
+            Lỗi cú pháp (syntax errors): xảy ra khi lập trình viên vi phạm các quy tắc của ngôn ngữ Python
+                                        khi viết các câu lệnh và được phát hiện bởi trình thông dịch
+            Lỗi thực thi (runtime errors):xảy ra khi thực hiện câu lệnh (ngoại lệ)
+            Lỗi ngữ nghĩa (semantic errors):Lỗi này không có thông báo nhưng làm cho chương trình chạy sai với ý định ban đầu
+            Cách bắt lỗi trong Python:
+                Sử dụng khối try...except để xử lý lỗi thực thi: Khối try...except giúp chương trình không bị dừng đột ngột khi gặp lỗi.
+                Ví Dụ:
+                        try:
+                            # code có thể gây lỗi
+                            x = int(input("Nhập số: "))
+                            print(10 / x)
+                        except ValueError:
+                            print("Bạn phải nhập số nguyên!")
+                        except ZeroDivisionError:
+                            print("Không được chia cho 0!")
+Câu 9:Kết quả và giải thích các biểu thức
+    Kết quả từng biểu thức:
+    (a) i1 + (i2 * i3)
+    2 + (5 * -3) = 2 + (-15) = -13
+        Giải thích: Nhân trước, cộng sau.
+
+    (b) i1 * (i2 + i3)
+    2 * (5 + -3) = 2 * 2 = 4
+         Giải thích: Tính trong ngoặc trước.
+
+    (c) i1 / (i2 + i3)
+    2 / (5 + -3) = 2 / 2 = 1.0
+        Giải thích: Chia lấy số thực.
+
+    (d) i1 // (i2 + i3)
+    2 // (5 + -3) = 2 // 2 = 1
+        Giải thích: Chia lấy phần nguyên.
+
+    (e) i1 / i2 + i3
+    2 / 5 + -3 = 0.4 + -3 = -2.6
+        Giải thích: Chia trước, cộng sau.
+
+    (f) i1 // i2 + i3
+    2 // 5 + -3 = 0 + -3 = -3
+        Giải thích: Chia lấy phần nguyên trước, cộng sau.
+
+    (g) 3 + 4 + 5 / 3
+    3 + 4 + (5 / 3) = 3 + 4 + 1.666... = 8.666...
+        Giải thích: Chia trước, cộng sau.
+
+    (h) 3 + 4 + 5 // 3
+    3 + 4 + (5 // 3) = 3 + 4 + 1 = 8
+        Giải thích: Chia lấy phần nguyên trước, cộng sau.
+
+    (i) (3 + 4 + 5) / 3
+    (3 + 4 + 5) / 3 = 12 / 3 = 4.0
+        Giải thích: Tính tổng trước, chia sau.
+
+    (j) (3 + 4 + 5) // 3
+    (3 + 4 + 5) // 3 = 12 // 3 = 4
+        Giải thích: Tính tổng trước, chia lấy phần nguyên sau.
+
+    (k) d1 + (d2 * d3)
+    2.0 + (5.0 * -0.5) = 2.0 + (-2.5) = -0.5
+        Giải thích: Nhân trước, cộng sau.
+
+    (l) d1 + d2 * d3
+    2.0 + 5.0 * -0.5 = 2.0 + (-2.5) = -0.5
+        Giải thích: Nhân trước, cộng sau.
+
+    (m) d1 / d2 - d3
+    2.0 / 5.0 - (-0.5) = 0.4 + 0.5 = 0.9
+        Giải thích: Chia trước, trừ sau.
+
+    (n) d1 / (d2 - d3)
+    2.0 / (5.0 - -0.5) = 2.0 / 5.5 ≈ 0.3636
+        Giải thích: Tính trong ngoặc trước, chia sau.
+
+    (o) d1 + d2 + d3 / 3
+    2.0 + 5.0 + (-0.5 / 3) = 2.0 + 5.0 + (-0.166...) = 6.833...
+        Giải thích: Chia trước, cộng sau.
+
+    (p) (d1 + d2 + d3) / 3
+    (2.0 + 5.0 + -0.5) / 3 = 6.5 / 3 ≈ 2.166...
+        Giải thích: Tính tổng trước, chia sau.
+
+    (q) d1 + d2 + (d3 / 3)
+    2.0 + 5.0 + (-0.5 / 3) = 2.0 + 5.0 + (-0.166...) = 6.833...
+        Giải thích: Chia trước, cộng sau.
+
+    (r) 3 * (d1 + d2) * (d1 - d3)
+    3 * (2.0 + 5.0) * (2.0 - -0.5) = 3 * 7.0 * 2.5 = 21.0 * 2.5 = 52.5
+        Giải thích: Tính trong ngoặc trước, nhân sau.
+Câu 10:Viết ngắn gọn lại các lệnh
+Lệnh ban đầu	                                                        Lệnh ngắn gọn
+(a) x = x + 1	                                                        x += 1
+(b) x = x / 2	                                                        x /= 2
+(c) x = x – 1	                                                        x -= 1
+(d) x = x + y	                                                        x += y
+(e) x = x - (y + 7)	                                                    x -= (y + 7)
+(f) x = 2*x	                                                            x *= 2
+(g) number_of_closed_cases = number_of_closed_cases + 2*ncc	            number_of_closed_cases += 2*ncc
